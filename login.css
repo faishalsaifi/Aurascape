@@ -208,7 +208,7 @@ body{
 }
 
 #active{
-  color: #fff;
+  color: #f60;
   opacity: 1;
 }
 .navbar-nav .nav-item .nav-link{
@@ -272,7 +272,7 @@ body{
 }
 .project-main{
     width: 100%;
-    height: 100dvh;
+    height: 100svh;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -328,17 +328,123 @@ body{
 }
 .login-left{
     width: 100%;
-    height: 100dvh;
-    background: #126464;
+    height: 100svh;
+    display: flex;
+   
+    flex-direction: column;
+    background: none;
+}
+.login-h2{
+  font-family: "DM Serif Display", serif;
+  color: #244d4d;
+  margin-bottom: 1.9rem;
+  font-size: 3.5rem;
+  line-height: 4.12rem;
+  margin-top: 5dvh;
+
+ 
+}
+.login-main{
+  margin-bottom: 0px;
+    font-family: Jost, sans-serif;
+    color: #595959;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+    width: 100%;
+    max-width: 430px;
+    letter-spacing: 0.4px;
+  
+}
+.login-form{
+  display: flex;
+  margin-top: 2.5rem;
+  height: fit-content;
+  gap: 1rem;
+  max-width: 400px;
+  flex-direction: column;
+}
+.login-input{
+  height: 4.37rem;
+  background: #f4f4f4;
+  padding-left: 2.5rem;
+  font-family: Jost, sans-serif;
+  color: #595959;
+  outline: none;
+  transition: all .4s ease;
+  border: 1px solid transparent;
+}
+.login-input::placeholder{
+  font-size: 1rem;
+  font-family: Jost, sans-serif;
+}
+.login-input:focus{
+  border: 1px solid #f60;
+  box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.1);
+}
+.forget-password-block{
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+}
+.forget-block ,.checkbox-label{
+  font-size: 1rem;
+  font-family: Jost, sans-serif;
+  font-weight: 500;
+  color: #232323;
+  transition: all .4s ease;
+}
+.forget-block:hover{
+  color: #f60;
+}
+.checkbox:checked{
+  background: #126464;
+}
+.checkbox-label{
+  color: #595959;
+  font-weight: 400;
+}
+.login-btn-block{
+  display: flex;
+  margin-top: 1rem;
+}
+.login-btn{
+  min-width:8.75rem;
+  border: none;
+  padding: 1rem 1rem;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all .4s ease;
+  font-family: Jost, sans-serif;
+
+}
+.log{
+  background: #244d4d;
+  color: #fff;
+
+}
+.log:hover{
+transform: translateY(-10%);
+}
+.reg{
+  background: none;
+  text-decoration: none;
+  color: #244d4d;
+ 
+}
+.reg:hover{
+  color: #f60;
 }
 .login-right{
     width: 100%;
-    height: 100dvh;
-    background: #126464;
+    height: 100vh;
+    /* background: #126464; */
 }
 .login-right-img{
     width: 100%;
     height: 100%;
+    /* aspect-ratio: 1/1; */
     object-fit: cover;
 }
 .newsletter{
@@ -577,7 +683,12 @@ body{
   .footer-bottom-link:hover{
     color: #f60;
   }
-
+@media screen and (max-width:991px){
+  .login-h2{
+    font-size: 2.25rem;
+    line-height: 3rem;
+  }
+}
   @media screen and (max-width:767px){
     .navbar-scroll{
         height: fit-content;
@@ -614,11 +725,14 @@ body{
         flex-direction: column;
       }
 
-      .newsletter-h2{
+      .newsletter-h2 ,.login-h2{
         font-size: 3.2rem;
   
     }
-
+.login-h2{
+  line-height: 2.25rem;
+  font-size: 2rem;
+}
     .footer-nav{
         width: 100%;
         height: fit-content;
@@ -634,11 +748,17 @@ body{
 
 @media screen and (max-width:576px) {
     
-    .newsletter-h2{
+    .newsletter-h2 {
         font-size: 2rem;
         line-height: 2.7rem;
         
-      }}
+      }
+      .login-h2{
+        font-size: 2.2rem;
+        line-height: 2.7rem;
+
+      }
+    }
 
  @media screen and (max-width:479px){
     
@@ -663,9 +783,14 @@ body{
 
           @media screen and (max-width:415px) {
     
-            .newsletter-h2{
+            .newsletter-h2 {
                 font-size: 1.8rem;
                 line-height: 2.7rem;
                 
+              }
+              .login-h2{
+                font-size: 2rem;
+                line-height: 2.7rem;
+
               }
             }

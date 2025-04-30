@@ -208,7 +208,7 @@ body{
 }
 
 #active{
-  color: #fff;
+  color: #f60;
   opacity: 1;
 }
 .navbar-nav .nav-item .nav-link{
@@ -743,15 +743,7 @@ color: #244d4d;
   width: 100%;
   z-index: 1;
 }
-.one{
-  /* background: #232323; */
-}
-.two{
-  /* background: #1b2c3e; */
-}
-.three{
-  /* background: #595959; */
-}
+
 .priv_arrow{
   position: absolute;
   right: 20%;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aurascape : Design with Harmony</title>
-    <link rel="stylesheet" href="blog.css" />
+    <link rel="stylesheet" href="register.css" />
     <link rel="icon" href="img/favicon.png" sizes="44" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800&family=PT+Serif:wght@400;700&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Public+Sans:ital,wght@0,200;0,300;0,400;0,500;0,700;1,400&family=Rancho&family=Roboto+Condensed:wght@400;700&family=Roboto+Mono:wght@300;400&family=Roboto:wght@500&family=Staatliches&family=Yeseva+One&display=swap");
@@ -129,7 +129,7 @@
                 <a
                   class="nav-link nav-item-link nav-active"
                   aria-current="page"
-                  
+                
                   href="index.html"
                   >Home</a
                 >
@@ -165,11 +165,13 @@
                       >Testimonials</a
                     ><a href="faq.html" class="pages-nav-block-dropdown-link"
                       >FAQ</a
-                    ><a href="blog.html" id="active" class="pages-nav-block-dropdown-link"
+                    ><a href="blog.html" class="pages-nav-block-dropdown-link"
                       >Blog</a
                     ><a href="login.html" class="pages-nav-block-dropdown-link"
                       >Login</a
-                    ><a href="register.html" class="pages-nav-block-dropdown-link"
+                    ><a
+                      href="register.html" id="active"
+                      class="pages-nav-block-dropdown-link"
                       >Register</a
                     >
                   </div>
@@ -188,55 +190,62 @@
 
     <div class="project-main">
       <div class="project-main-text">
-        <h1 class="project-main-h1">Blog post</h1>
+        <h1 class="project-main-h1">Register</h1>
         <div class="project-main-sub">
           <a href="index.html" class="project-main-sub-link">Home</a
-          ><span>-</span><span>blog</span>
+          ><span>-</span><span>Register</span>
         </div>
       </div>
     </div>
 
-    <div
-    class="container-fluid d-flex flex-column gap-5 p-2 p-md-1 p-lg-5 justify-content-center align-items-center blog"
-  >
-  <div class="row w-100 p-1 p-sm-3 p-md-5 p-lg-0 p-xl-0 row-gap-0">
-    <div class="col-12 col-md-12 col-lg-6 col-xl-4 p-3"><div class="blog-box p-1" >
-      <div class="blog-img-box">
-        <img src="https://assets.website-files.com/6333ddbf4600453f512ca9f6/634686ddb5addcf93c605e2e_7.jpg" alt="" class="blog-img">
+    <div class="conatiner login-container p-4 p-md-3 p-lg-5 p-xl-5">
+      <div
+        class="row gap-3 gap-l-0 gap-xl-0 d-flex justify-content-center flex-column-reverse flex-lg-row"
+      >
+        <div class="col-md-12 col-lg-6 col-xl-6 mt-0 mt-lg-3 my-lg-5 my-xl-5">
+          <div class="login-left">
+            <h2 class="login-h2">Create Account</h2>
+            <p class="login-main">
+              Aurascape is one of the most popular Interior design agency for
+              those who want to explore the wold and try to make adventure
+            </p>
+            <form action="" class="login-form">
+              <input type="text" class="login-input" placeholder="Username" />
+              <input type="email" class="login-input" placeholder="Email" />
+              <input type="text" class="login-input" placeholder="Password" />
+              <input type="text" class="login-input" placeholder="Confirm Password" />
+
+              <div class="forget-password-block">
+                <span class="forget-block">
+                  <input type="checkbox" id="checkbox" class="checkbox" />
+                  <label for="checkbox" class="checkbox-label"
+                    >I agree with the </label
+                  >
+                  <a href="#" class="terms">Terms & Conditions</a>
+                </span>
+                
+              </div>
+              <div class="login-btn-block">
+                <button class="reg-btn reg">Register</button>
+                <div class="w-100 d-flex justify-content-center align-items-center p-0 gap-1">
+                <span class="login-btn-txt">already have an account?</span>
+                <a class="log" href="login.html">Login</a></div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-5 col-xl-5 mb-0 mb-lg-3 my-lg-5 my-xl-5">
+          <div class="login-right">
+            <img
+              src="https://assets.website-files.com/6332802bd593fd08af27cb6f/6335268a95a2bbf5c003f3d6_image-3.jpg"
+              alt=""
+              class="login-right-img"
+            />
+          </div>
+        </div>
       </div>
-      <div class="blog-date"><span class="date">October 12, 2021</span><div class="blog-line-shape"></div><span class="author">By -
-<a href="#" class="author-link"> allen blick</a></span></div>
-<h3 class="blog-title">
-  <a href="#" class="blog-title-link">
-    Seven tips to help you get better interior design & Concept
-</a></h3>
-<div class="blog-read-more-link">
-  <a href="#" class="blog-read-link">Read more <svg width="25" height="10" viewBox="0 0 25 10" fill="blue" xmlns="http://www.w3.org/2000/svg">
-    <g clip-path="url(#clip0_311_227)">
-    <path d="M24.4831 5.03928H0.51564C0.447901 5.03936 0.380811 5.02608 0.318212 5.0002C0.255613 4.97432 0.198734 4.93633 0.150835 4.88844C0.102936 4.84054 0.0649598 4.78366 0.039077 4.72106C0.0131942 4.65846 -8.57109e-05 4.59137 4.16261e-07 4.52363C3.61622e-07 4.45595 0.0133474 4.38893 0.0392687 4.32641C0.06519 4.26389 0.103177 4.20709 0.151067 4.15926C0.198957 4.11143 0.255808 4.07351 0.318364 4.04767C0.380921 4.02182 0.447956 4.00857 0.51564 4.00865H23.2385L20.1106 0.880133C20.0627 0.8323 20.0247 0.77549 19.9987 0.712947C19.9728 0.650405 19.9594 0.583355 19.9594 0.515648C19.9594 0.44794 19.9728 0.380906 19.9987 0.318364C20.0247 0.255822 20.0627 0.199011 20.1106 0.151178C20.1584 0.103258 20.2152 0.0652394 20.2778 0.0393002C20.3403 0.0133611 20.4074 0 20.4751 0C20.5428 0 20.6098 0.0133611 20.6724 0.0393002C20.7349 0.0652394 20.7917 0.103258 20.8396 0.151178L24.8488 4.15982C24.9212 4.23181 24.9704 4.32375 24.9903 4.42388C25.0101 4.52401 24.9996 4.62778 24.9601 4.72191C24.9206 4.81585 24.8543 4.89607 24.7694 4.95251C24.6846 5.00896 24.585 5.03914 24.4831 5.03928Z" class="read-icon"/>
-    <path d="M20.4692 9.0532C20.4015 9.05351 20.3345 9.04029 20.272 9.01433C20.2095 8.98837 20.1528 8.9502 20.1053 8.90204C20.0574 8.85415 20.0193 8.79727 19.9934 8.73468C19.9675 8.67208 19.9541 8.605 19.9541 8.53723C19.9541 8.46947 19.9675 8.40237 19.9934 8.33977C20.0193 8.27718 20.0574 8.2203 20.1053 8.17241L24.1192 4.15855C24.1671 4.11061 24.224 4.07257 24.2866 4.04662C24.3491 4.02068 24.4162 4.00732 24.484 4.00732C24.5518 4.00732 24.6189 4.02068 24.6815 4.04662C24.7441 4.07257 24.8009 4.11061 24.8488 4.15855C24.8967 4.20644 24.9348 4.2633 24.9607 4.3259C24.9867 4.38849 25 4.45559 25 4.52336C25 4.59112 24.9867 4.65822 24.9607 4.72081C24.9348 4.78341 24.8967 4.84027 24.8488 4.88816L20.8349 8.90204C20.787 8.95014 20.73 8.98826 20.6672 9.0142C20.6044 9.04015 20.5371 9.05341 20.4692 9.0532Z" class="read-icon"/>
-    </g>
-    <defs>
-    <clipPath id="clip0_311_227">
-    <rect width="25" height="9.05379" fill="xwhite"/>
-    </clipPath>
-    </defs>
-    </svg>
-    </a>
-</div>
-    </div></div>
-   </div>
-
-    <div class="d-flex justify-content-center align-items-center w-100 blog-button-container mt-5">
-
-      <button class="blog-button" onclick="location.href='blog.html'"><svg class="w-pagination-previous-icon" height="12px" width="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" transform="translate(0, 1)"><path fill="none" stroke="currentColor" fill-rule="evenodd" d="M8 10L4 6l4-4"></path></svg> Previous</button>
-
     </div>
-  </div>
 
-    
-
-   
     <div
       class="container-fluid d-flex flex-column gap-5 p-3 p-md-1 p-lg-5 justify-content-center align-items-center newsletter"
     >

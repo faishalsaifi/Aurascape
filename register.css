@@ -272,7 +272,7 @@ body{
 }
 .project-main{
     width: 100%;
-    height: 100dvh;
+    height: 100svh;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -321,105 +321,151 @@ body{
     text-decoration: none;
     color: #fff;
 }
-.blog{
-  width: 100%;
-  background: #fff;
-  height: fit-content;
-  z-index: 1;
+.login-container{
+    height: fit-content;
+    z-index: 1;
+    background-color: #fff;
 }
-.blog-box{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  /* height: 40dvh; */
+.login-left{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+   
+    flex-direction: column;
+    background: none;
+}
+.login-h2{
+  font-family: "DM Serif Display", serif;
+  color: #244d4d;
+  margin-bottom: 1.9rem;
+  font-size: 3.5rem;
+  line-height: 4.12rem;
+  margin-top: 5svh;
+
  
 }
-.blog-img-box{
-  height: fit-content;
-  width: 100%;
+.login-main{
+  margin-bottom: 0px;
+    font-family: Jost, sans-serif;
+    color: #595959;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+    width: 100%;
+    max-width: 430px;
+    letter-spacing: 0.4px;
+  
 }
-.blog-img{
-  width: 100%;
-  max-width: 100%;
-  object-fit: cover;
-  height: 100%;
-}
-.blog-date{
+.login-form{
   display: flex;
-  justify-content: start;
-  align-items: center;
-  gap: 0.5rem;
+  margin-top: 2.5rem;
+  height: fit-content;
+  gap: 1rem;
+  max-width: 400px;
+  flex-direction: column;
+}
+.login-input{
+  height: 4.37rem;
+  background: #f4f4f4;
+  padding-left: 2.5rem;
   font-family: Jost, sans-serif;
-  font-size: 0.92rem;
   color: #595959;
-
+  outline: none;
+  transition: all .4s ease;
+  border: 1px solid transparent;
 }
-.blog-line-shape{
-  width: 1px;
-  background: #595959;
-  height: 0.9rem;
+.login-input::placeholder{
+  font-size: 1rem;
+  font-family: Jost, sans-serif;
 }
-.author-link{
-  text-decoration: none;
-  color: #595959;
-  font-size: 0.9rem;
-  font-weight: 300;
-  text-transform: uppercase;
-  transition: .4s ease-in-out;
+.login-input:focus{
+  border: 1px solid #f60;
+  box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.1);
 }
-.author-link:hover{
-  color: #244d4d;
+.forget-password-block{
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
 }
-
-.blog-title-link{
-  text-decoration: none;
-  margin-bottom: 10px;
-  font-family: 'DM Serif Display', sans-serif;
-  font-size: 2.25rem;
+.forget-block ,.checkbox-label{
+  font-size: 1rem;
+  font-family: Jost, sans-serif;
+  font-weight: 500;
   color: #232323;
-  line-height: 2.87rem;
-  font-weight: 400;
-   transition: .4s ease-in-out;
+  transition: all .4s ease;
 }
-.blog-title-link:hover{
-  color: #244d4d;
+.forget-block:hover{
+  color: #f60;
 }
-.blog-read-link{
+.checkbox:checked{
+  background: #126464;
+}
+.checkbox-label{
   color: #595959;
-  transition: .4s ease-in-out;
-  text-decoration: none;
+  font-weight: 400;
 }
-.blog-read-link:hover{
-  color: #244d4d;
+.terms{
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: Jost, sans-serif;
+    color: #494949;
+    transition: color .4s ease-in-out;
 }
-.read-icon{
-  fill: #595959;
-  transition: .4s ease-in-out;
-}
-.blog-read-link:hover .read-icon{
-fill: #244d4d;
-}
-.blog-button{
-  border: none;
+.terms:hover{
 
+    color: #f60;
+}
+.login-btn-block{
+  display: flex;
+  margin-top: 1rem;
+}
+.reg-btn{
+  min-width:8.75rem;
+  border: none;
+  padding: 1rem 1rem;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all .4s ease;
+  font-family: Jost, sans-serif;
+
+}
+.reg{
   background: #244d4d;
   color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.2rem;
-  font-size: 1.05rem;
-  line-height: 1.125rem;
-  font-weight: 500;
-  letter-spacing: 0.1rem;
-  min-width: 8.75rem;
-  padding: 0.93rem 1.18rem;
-  font-family: Jost,sans-serif;
-  transition: transform .5s ease-in-out;
+
 }
-.blog-button:hover{
-  transform: translateY(-0.5rem);
+.reg:hover{
+transform: translateY(-10%);
+}
+.log{
+  background: none;
+  min-width: 0 !important;
+  text-decoration: none;
+  font-weight: 500;
+  color: #244d4d;
+  transition: color .4s ease-in-out;
+ 
+}
+.log:hover{
+  color: #f60;
+}
+.login-btn-txt{
+    font-family: 'Jost',sans-serif;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #595959 !important;
+}
+.login-right{
+    width: 100%;
+    height: 100vh;
+    /* background: #126464; */
+}
+.login-right-img{
+    width: 100%;
+    height: 100%;
+    /* aspect-ratio: 1/1; */
+    object-fit: cover;
 }
 .newsletter{
     width: 100%;
@@ -657,27 +703,12 @@ fill: #244d4d;
   .footer-bottom-link:hover{
     color: #f60;
   }
-  @media screen and (min-width:991px) and (max-width:1199px){
-    .faq-q-text{
-      font-size: 1.8rem;
-    }
+@media screen and (max-width:991px){
+  .login-h2{
+    font-size: 2.25rem;
+    line-height: 3rem;
   }
-  @media screen and (max-width:991px){
-    .text-box{
-        order: 1;
-    }
-    .blog-title-link{
-      font-size: 2rem;
-      line-height:2.5rem ;
-    }
-    .img-box{
-        order: 2;
-    }
-    .about-interior-box-h3{
-      font-size: 1.75rem;
-    }
-   
-  }
+}
   @media screen and (max-width:767px){
     .navbar-scroll{
         height: fit-content;
@@ -690,53 +721,38 @@ fill: #244d4d;
         width: 100%;
         background: #126464;
     }
-    .faq-q-text{
-      font-size: 1.5rem;
-    }
-    .q-block{
-      max-height: fit-content;
-    }
     .pages-nav-block{
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-      align-items: first baseline;
-    }
-    .drop-flex{
-      display: flex ;
-      background: transparent;
-      position: relative;
-      margin-left: 0rem;
-      border-radius: 0.75rem;
-      /* gap: 1rem; */
-     padding-left: 0.62rem;
-     width: 12.5rem;
-     padding-top: 0.93rem;
-     padding-bottom: 0.93rem;
-      max-width: 12.5rem;
-      flex-direction: column;
-    }
-    .pages-nav-block-dropdown-link{
-      color: #fff;
-    }
-    .service-h2{
-        font-size: 3.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: first baseline;
       }
-      .about-us-help-h2{
-      font-size: 3.2rem;
-  
-    }
-    .newsletter-h2{
+      .pages-nav-block-dropdown-link{
+        color: #fff;
+      }
+      .drop-flex{
+        display: flex ;
+        background: transparent;
+        position: relative;
+        margin-left: 0rem;
+        border-radius: 0.75rem;
+        /* gap: 1rem; */
+       padding-left: 0.62rem;
+       width: 12.5rem;
+       padding-top: 0.93rem;
+       padding-bottom: 0.93rem;
+        max-width: 12.5rem;
+        flex-direction: column;
+      }
+
+      .newsletter-h2 ,.login-h2{
         font-size: 3.2rem;
   
     }
-    /* .team-title-h2{
-      font-size: 2.4rem;
-    } */
-    .about-interior-head-h2{
-      font-size: 3.2rem;
-    }
-    
+.login-h2{
+  line-height: 2.25rem;
+  font-size: 2rem;
+}
     .footer-nav{
         width: 100%;
         height: fit-content;
@@ -744,87 +760,57 @@ fill: #244d4d;
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }
+
     .footer-contact-box{
         grid-column: span 2;
     }
-    /* .project-left-h3{
-        font-size: 1.75rem;
-    } */
-  }
-  @media screen and (max-width:576px) {
+}
+
+@media screen and (max-width:576px) {
     
-    .newsletter-h2{
+    .newsletter-h2 {
         font-size: 2rem;
         line-height: 2.7rem;
         
       }
-      .about-interior-head-h2{
-        font-size: 2rem;
-        line-height: 2.7rem;
-      }
-      .about-us-help-h2{
-      font-size: 2rem;
-      line-height: 2.7rem;
-  
-    }
-    .about-us-help-contact-div{
-      flex-direction: column;
-    }
-    .happy-customer-left-h2{
-      font-size: 2rem;
-      line-height: 2.7rem;
-    
-    }
-    
-  }
-  @media screen and (max-width:479px){
-    
-    .newsletter-btn{
-        position: relative;
-        right: 0;
-        width: fit-content;
-        border: none;
-        top: 0%;
-  
-        transform: translateY(0%);
-   
-      
-    }
-    .blog-title-link{
-      font-size: 1.75rem;
-      line-height:2.25rem ;
-    }
-    .about-interior-box-h3{
-      font-size: 1.5rem;
-    }
-    .newsletter-input{
-      width: 100%;
-      padding: 0rem 5rem 0rem 2.5rem;
-     
-      height: 5rem;
-      
-    }
-    .team-title-h2{
-      font-size: 2.4rem;
-      line-height: 3.5rem;
-    }
-  }
-  
-  @media screen and (max-width:415px) {
-    
-    .newsletter-h2{
-        font-size: 1.8rem;
-        line-height: 2.7rem;
-        
-      }
-      .about-interior-head-h2{
+      .login-h2{
         font-size: 2.2rem;
         line-height: 2.7rem;
+
       }
-      .about-us-help-h2{
-      font-size: 2.2rem;
-      line-height: 2.7rem;
-  
     }
-  }
-  
+
+ @media screen and (max-width:479px){
+    
+        .newsletter-btn{
+            position: relative;
+            right: 0;
+            width: fit-content;
+            border: none;
+            top: 0%;
+      
+            transform: translateY(0%);
+       
+          
+        }
+        .newsletter-input{
+            width: 100%;
+            padding: 0rem 5rem 0rem 2.5rem;
+           
+            height: 5rem;
+            
+          }}
+
+          @media screen and (max-width:415px) {
+    
+            .newsletter-h2 {
+                font-size: 1.8rem;
+                line-height: 2.7rem;
+                
+              }
+              .login-h2{
+                font-size: 2rem;
+                line-height: 2.7rem;
+
+              }
+            }
