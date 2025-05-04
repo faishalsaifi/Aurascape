@@ -673,7 +673,7 @@ display: flex;
     width: 100%;
     height: fit-content;
     z-index: 1;
-    background: url('img/project-bg.png');
+    background: url('image/project-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -700,7 +700,7 @@ display: flex;
     z-index: 1;
     background-position: 50% 50%;
     background-size: cover;
-    background: url('img/project-left.png');
+    background: url('image/project-left.png');
     background-repeat: no-repeat;
     height: fit-content;
     /* max-width: 370px; */
@@ -1266,7 +1266,7 @@ transform: scale(1.1);
     z-index: 1;
     height: fit-content;
     background-color: #244d4d;
-    background-image: url('img/footer-bg.svg');
+    background-image: url('image/footer-bg.svg');
 }
 .footer-row{
     height: fit-content;
